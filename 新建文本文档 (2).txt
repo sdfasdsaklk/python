@@ -1,0 +1,60 @@
+第一题：
+Celsius=float(input('Enter a degree in Celsius: 43'))
+Fahrenheit=(9/5) * Celsius + 32
+print('{}cesius ={}fahrenheit'.format(Celsius,Fahrenheit))
+
+第二题：
+import math  ##不写π有偏差
+radius,length=map(float,imput().split(','))
+area=radius * radius * π
+volume=area * length
+print('The area is %.4f'%(area))
+print('The volume is %.1f'%(volume))
+
+
+
+第三题：
+feet=float(input('Enter value for feet:16.5'))
+meter=feet*0.305
+print('{}feet is {}metres'.format(feet,meter))
+
+
+第四题：
+M=float(input('Enter the amount of water in kilograms:'))
+initial=float(input('Enter the initial temperature:'))
+final=float(input('Enter the final temperature:'))
+Q=M * (finalTemperature - initialTemperature) * 4184
+print('The energy needed is 1625484.0{}'.format(Q))
+
+第五题：
+import math
+e,g=map(float,input('Enter balance and interest rate (e.g.,3 for 3%):').split(','))
+lixi=e*(g/1200)
+print('The interest is %.5f'%(lixi))
+
+第六题
+import math
+v0,v1,t=map(float,input('Enter v0,v1,and t:').split(','))
+average=(v1-v0)/t
+print('The average acceleration is &.4f'%(average))
+
+第七题
+a=float(input('Enter the monthly saving amount:'))
+b=0
+for i in range(6):
+b=(a+b)*(1+0.00417)
+print('After the sixth month,the account value is%.2f'%b)
+
+
+
+第八题
+a=float(input('Enter a number between 0 and 1000:'))
+ge=a%10
+shi=a//10%10
+bai=a//100
+b=ge+shi+bai
+print('The sum of the digits is:%d'%(b))
+
+
+
+
